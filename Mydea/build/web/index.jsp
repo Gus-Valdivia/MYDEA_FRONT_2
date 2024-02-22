@@ -16,7 +16,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" http-equiv="Content-Type" content="width=device-width, initial-scale=1, charset=UTF-8">
         <jsp:include page="templates/Referencias/Todas_Ref.jsp"/>
 
         <title>Difunde tú negocio con Mydea</title>
