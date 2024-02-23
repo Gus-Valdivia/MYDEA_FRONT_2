@@ -778,3 +778,38 @@ nav {
 .NegocioSC{
     position: relative;
 }
+
+@media screen and (max-width:990px){
+    #carouselExampleInterval{
+        padding-top: 14vh;
+    }
+    .neg{
+        flex-direction: column;
+    }
+    .section_imagen_neg{
+       order: 1; 
+    }
+    .section_neg{
+        order: 2;
+    }
+    .img_lg_crrs{
+        height: 25vh;
+        width: 25vh;
+    }
+    .carousel-inner{
+        height: 50vh;
+    }
+    .btn_exp{
+        width: 50%;
+    }
+}
+
+@media screen and (max-height:670px){
+    .Nom_neg_indx{
+        font-size: 5rem;
+    }
+    .Des_neg_indx{
+        font-size: 1rem;
+        margin-bottom: 5px;
+    }
+}

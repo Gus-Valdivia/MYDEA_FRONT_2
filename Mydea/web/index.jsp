@@ -70,8 +70,8 @@
             <div class="carousel-inner h-100">
                 <div class="carousel-item active h-100" data-bs-interval="10000">
                     <img src="<%=img2[0]%>" class="d-block w-100 h-100 imgn" alt="...">
-                    <div class="neg d-flex">
-                        <section class="w-100 h-100 d-flex flex-column justify-content-around">
+                    <div class="neg d-flex justify-content-center align-items-center">
+                        <section class="w-100 h-100 d-flex flex-column justify-content-around section_neg">
                             <span class="Nom_neg_indx d-flex align-items-center"><%=nombreg[0]%></span>
                             <section class="d-flex flex-column desc justify-content-between">
                                 <span class="Des_neg_indx"><%=dd[0]%></span>
@@ -81,15 +81,15 @@
                                 </form>
                             </section>
                         </section>
-                        <section class="w-50 h-100 d-flex justify-content-center align-items-center">
+                        <section class="w-50 h-100 d-flex justify-content-center align-items-center section_imagen_neg">
                             <img src="<%=imgg[0]%>" alt="" class="img_lg_crrs">
                         </section>
                     </div>
                 </div>
                 <div class="carousel-item h-100" data-bs-interval="2000">
                     <img src="<%=img2[1]%>" class="d-block w-100 h-100 imgn" alt="...">
-                    <div class="neg d-flex">
-                        <section class="w-100 h-100 d-flex flex-column justify-content-around">
+                    <div class="neg d-flex justify-content-center align-items-center">
+                        <section class="w-100 h-100 d-flex flex-column justify-content-around section_neg">
                             <span class="Nom_neg_indx d-flex align-items-center"><%=nombreg[1]%></span>
                             <section class="d-flex flex-column desc justify-content-between">
                                 <span class="Des_neg_indx"><%=dd[1]%></span>
@@ -99,15 +99,15 @@
                                 </form>
                             </section>
                         </section>
-                        <section class="w-50 h-100 d-flex justify-content-center align-items-center">
+                        <section class="w-50 h-100 d-flex justify-content-center align-items-center section_imagen_neg">
                             <img src="<%=imgg[1]%>" alt="" class="img_lg_crrs">
                         </section>
                     </div>
                 </div>
                 <div class="carousel-item h-100">
                     <img src="<%=img2[2]%>" class="d-block w-100 h-100 imgn" alt="...">
-                    <div class="neg d-flex">
-                        <section class="w-100 h-100 d-flex flex-column justify-content-around">
+                    <div class="neg d-flex justify-content-center align-items-center">
+                        <section class="w-100 h-100 d-flex flex-column justify-content-around section_neg">
                             <span class="Nom_neg_indx d-flex align-items-center"><%=nombreg[2]%></span>
                             <section class="d-flex flex-column desc justify-content-between">
                                 <span class="Des_neg_indx"><%=dd[2]%></span>
@@ -117,7 +117,7 @@
                                 </form>
                             </section>
                         </section>
-                        <section class="w-50 h-100 d-flex justify-content-center align-items-center">
+                        <section class="w-50 h-100 d-flex justify-content-center align-items-center section_imagen_neg">
                             <img src="<%=imgg[2]%>" alt="" class="img_lg_crrs">
                         </section>
                     </div>
