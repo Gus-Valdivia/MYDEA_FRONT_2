@@ -732,7 +732,7 @@ nav {
   width: 100%;
 }
 .img_card_cm{
-  position: absolute;
+  position: relative;
   left: 50%;
   top: 0;
   transform: translate(-50%);
@@ -778,8 +778,19 @@ nav {
 .NegocioSC{
     position: relative;
 }
+.card_info_in{
+    flex-direction: column;
+    height: 100%;
+    width: 25%;
+}
+.information_index{
+    display: flex;
+}
+.information_index_mobile{
+    display: none;
+}
 
-@media screen and (max-width:990px){
+@media screen and (max-width:1024px){
     #carouselExampleInterval{
         padding-top: 14vh;
     }
@@ -802,14 +813,30 @@ nav {
     .btn_exp{
         width: 50%;
     }
+    .information_index{
+        display: none;
+    }
+    .information_index_mobile{
+        display: flex;
+        flex-direction: column;
+    }
+    .card_info_in_mobile{
+        margin: 5px;
+        border-radius: 10px
+    }
 }
 
-@media screen and (max-height:670px){
+@media screen and (max-height:741px){
     .Nom_neg_indx{
         font-size: 5rem;
     }
     .Des_neg_indx{
         font-size: 1rem;
         margin-bottom: 5px;
+    }
+}
+@media screen and (min-height:1366px){
+    #carouselExampleInterval{
+        padding-top: 10%;
     }
 }

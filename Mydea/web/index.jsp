@@ -135,9 +135,9 @@
             </button>
         </div>
         <!--INFORMACIÓN-->
-        <div class="information_index d-flex justify-content-around">
-            <section class="w-25 h-100 card_info_in card_qs d-flex flex-column justify-content-between">
-                <section class="w-100 p-2">
+        <div class="information_index justify-content-around">
+            <section class="card_info_in card_qs d-flex justify-content-between">
+                <section class=" section_img w-100 p-2">
                     <img src="assets/logo_mydea_comida.png" alt="" class="w-100 mydea_letras_img">
                     <img src="assets/Myde.png" alt="" class="w-100 myde_card_in">
                 </section>
@@ -146,14 +146,14 @@
                     <span class="text_qs_card_ds">Somos Ethev, una empresa dedicada a desarrollar soluciones tecnológicas mediante la implementación del desarrollo de Software para resolver problemas en la Ciudad de México. Este proyecto, Mydea, está enfocado en impulsar y promover pequeños negocios en la alcaldía de Xochimilco, brindándoles visibilidad y apoyo para aumentar su reconocimiento y crecimiento en la comunidad.</span>
                 </section>
             </section>
-            <section class="w-25 h-100 card_info_in card_cmn d-flex flex-column justify-content-end">
+            <section class="card_info_in card_cmn d-flex justify-content-end">
                 <img class="img_card_cm" src="assets/cmn.png" alt="">
                 <section class="d-flex flex-column text-white justify-content-evenly align-items-center text_qs_card Inria">
                     <span class="w-100 text_qs_card_tt justify-content-center">Consulta miles de negocios.</span>
                     <span class="text_qs_card_ds">Descubre miles de opciones para satisfacer tu hambre o antojitos. Desde restaurantes acogedores hasta panaderías innovadoras, nuestra plataforma te ofrece acceso a una diversidad de negocios locales de comida o snacks. Encuentra lo que buscas y explora nuevas oportunidades en nuestra extensa red de emprendimientos.</span>
                 </section>
             </section>
-            <section class="w-25 h-100 card_info_in card_eib d-flex flex-column justify-content-end">
+            <section class="card_info_in card_eib d-flex justify-content-end">
                 <img class="img_card_cm" src="assets/eib.png" alt="" id="img_card_eib">
                 <section class="d-flex flex-column text-white justify-content-evenly align-items-center text_qs_card Inria">
                     <span class="w-100 text_qs_card_tt justify-content-center">Encuentra los insumos que buscas.</span>
@@ -161,7 +161,27 @@
                 </section>
             </section>
         </div>
-
+        
+        <div class="information_index_mobile justify-content-around">
+            <section class="card_info_in_mobile card_qs d-flex justify-content-between">
+                <section class="d-flex flex-column text-white text_qs_card p-2 justify-content-evenly align-items-center Inria">
+                    <span class="w-100 text_qs_card_tt justify-content-center">¿Quiénes somos?</span>
+                    <span class="text_qs_card_ds_mobile">Somos Ethev, una empresa dedicada a desarrollar soluciones tecnológicas mediante la implementación del desarrollo de Software para resolver problemas en la Ciudad de México. Este proyecto, Mydea, está enfocado en impulsar y promover pequeños negocios en la alcaldía de Xochimilco, brindándoles visibilidad y apoyo para aumentar su reconocimiento y crecimiento en la comunidad.</span>
+                </section>
+            </section>
+            <section class="card_info_in_mobile card_cmn d-flex justify-content-between">
+                <section class="d-flex flex-column text-white text_qs_card p-2 justify-content-evenly align-items-center text_qs_card Inria">
+                    <span class="w-100 text_qs_card_tt justify-content-center">Consulta miles de negocios.</span>
+                    <span class="text_qs_card_ds_mobile">Descubre miles de opciones para satisfacer tu hambre o antojitos. Desde restaurantes acogedores hasta panaderías innovadoras, nuestra plataforma te ofrece acceso a una diversidad de negocios locales de comida o snacks. Encuentra lo que buscas y explora nuevas oportunidades en nuestra extensa red de emprendimientos.</span>
+                </section>
+            </section>
+            <section class="card_info_in_mobile card_eib d-flex justify-content-between">
+                <section class="d-flex flex-column text-white text_qs_card p-2 justify-content-evenly align-items-center text_qs_card Inria">
+                    <span class="w-100 text_qs_card_tt justify-content-center">Encuentra los insumos que buscas.</span>
+                    <span class="text_qs_card_ds_mobile">Explora una gran variedad de insumos al alcance de un clic. Desde ingredientes frescos hasta utensilios de cocina especializados, nuestra plataforma te conecta con proveedores locales de restaurantes, panaderías, abarrotes y más. Encuentra los productos esenciales para tus creaciones culinarias.</span>
+                </section>
+            </section>
+        </div>
         <!--LOS MEJORES NEGOCIOS-->
         <div class="padd_lds">
             <div class="slid_neg d-flex flex-column">
