@@ -186,7 +186,7 @@
         <div class="padd_lds">
             <div class="slid_neg d-flex flex-column">
                 <span class="w-100">Los Mejores Negocios</span>
-                <span>Encuentra y apoya a los mejores negocios de nuestra comunidad en un solo lugar.
+                <span class="texto">Encuentra y apoya a los mejores negocios de nuestra comunidad en un solo lugar.
                       Descubre joyas ocultas y favoritos de la comunidad, cuidadosamente seleccionados por su calidad, servicio excepcional o propuestas únicas. Disfruta de experiencias gastronómicas y servicios que sobresalen, avalados por la satisfacción de sus clientes.
                 </span>
                 <button id="prev_lmn" class="btn prev"><i class="bi bi-caret-left"></i></button>
@@ -227,7 +227,7 @@
                                 </section>
                                 <section class="d-flex w-100 justify-content-around align-items-center dir_sli_n">
                                     <i class="bi bi-geo-alt-fill"></i>
-                                    <span class="w-75"><%=direccion%></span>
+                                    <span class="w-75 direccion"><%=direccion%></span>
 
                                 </section>
 
@@ -239,9 +239,6 @@
                     <%
                         }
                     %>
-
-
-
                 </div>
             </div>
         </div>
@@ -249,7 +246,7 @@
         <!--DE TODO UN POCO-->
         <div class="slid_pro d-flex flex-column">
             <span class="w-100 dtp_tt dtup">De Todo un Poco</span>
-            <span class="dtup">Aquí encontrarás una mezcla fascinante de contenido variado que enriquecerá tu experiencia. 
+            <span class="dtup texto">Aquí encontrarás una mezcla fascinante de contenido variado que enriquecerá tu experiencia. 
                 Sumérgete en artículos, recomendaciones, actualizaciones y mucho más. Explora, aprende y descubre un mundo de posibilidades en este espacio lleno de sorpresas.
             </span>
             <button id="prev_dtp" class="btn prev"><i class="bi bi-caret-left"></i></button>

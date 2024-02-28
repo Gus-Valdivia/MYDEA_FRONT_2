@@ -254,7 +254,7 @@ nav {
 }
 .cf_sli_n {
   font-size: 1.4rem;
-  height: 2rem;
+  /*height: 2rem;*/
 }
 .dir_sli_n i {
   font-size: 1.8rem;
@@ -823,6 +823,39 @@ nav {
     .card_info_in_mobile{
         margin: 5px;
         border-radius: 10px
+    }
+    .texto{
+        display: none;
+    }
+    .card_i{
+        width: 250px;
+        height: 250px;
+    }
+    .prev{
+        left: 10px;
+    }
+    .next{
+        right: 0;
+    }
+    .hover_infn{
+        width: 250px;
+        height: 250px;
+    }
+    .dts_sli_n{
+        width: 250px;
+        height: 250px;
+    }
+    #nn_sli_n{
+        font-size: 1.5rem;
+    }
+    #nv_sli_n{
+        font-size: 1rem;
+    }
+    .cf_sli_n{
+        font-size: 1rem;
+    }
+    .direccion{
+        font-size: 1rem;
     }
 }
 
