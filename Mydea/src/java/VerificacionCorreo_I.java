@@ -43,12 +43,12 @@ public class VerificacionCorreo_I extends HttpServlet {
      * @throws IOException if an I/O error occurs
      */
     
-    public String sendConfirmationCode(HttpServletRequest request) {
+   public String sendConfirmationCode(HttpServletRequest request) {
         
         String toEmail = (String) request.getSession().getAttribute("correo");
         System.out.println("Email stored in session: " + toEmail);
         final String username = "mydeaethev@gmail.com";
-        final String password = "yorv tvir hycr qnrd";
+        final String password = "dram nilv kafa zpag";
 
         Properties props = new Properties();
         props.put("mail.smtp.host", "smtp.gmail.com");
@@ -71,12 +71,12 @@ public class VerificacionCorreo_I extends HttpServlet {
                     Message.RecipientType.TO,
                     InternetAddress.parse(toEmail)
             );
-            message.setSubject("Codigo de verificacion");
+            message.setSubject("Codigo de verificación");
 
             String confirmationCode = generarCodigo();
             request.getSession().setAttribute("generationTime", LocalDateTime.now());
             
-            message.setText("Su codigo de verificacion es: " + confirmationCode);
+            message.setText("Su codigo de verificación es: " + confirmationCode);
             
             Transport.send(message);
             System.out.println("Confirmation code sent to email: " + toEmail);

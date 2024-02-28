@@ -14,9 +14,10 @@
 <%@page import="java.util.ArrayList" %>
 <%
     HttpSession session1 = request.getSession(false);
-    if (session1.getAttribute("usuario") != null) {
+    if (session1.getAttribute("usuario") != null)
+    {
 
-    %>
+%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -28,8 +29,7 @@
     <body class="index">
         <jsp:include page="templates/Navegadores/Navegador_CC.jsp"/>
 
-        <%
-            Conexion con;
+        <%            Conexion con;
             Connection c;
             Statement stmt;
             ResultSet rs;
@@ -70,7 +70,7 @@
                 <div class="carousel-item active h-100" data-bs-interval="10000">
                     <img src="<%=img2[0]%>" class="d-block w-100 h-100 imgn" alt="...">
                     <div class="neg d-flex">
-                        <section class="w-100 h-100 d-flex flex-column justify-content-around">
+                        <section class="w-100 h-100 d-flex flex-column justify-content-center">
                             <span class="Nom_neg_indx d-flex align-items-center"><%=nombreg[0]%></span>
                             <section class="d-flex flex-column desc justify-content-between">
                                 <span class="Des_neg_indx"><%=dd[0]%></span>
@@ -88,7 +88,7 @@
                 <div class="carousel-item h-100" data-bs-interval="2000">
                     <img src="<%=img2[1]%>" class="d-block w-100 h-100 imgn" alt="...">
                     <div class="neg d-flex">
-                        <section class="w-100 h-100 d-flex flex-column justify-content-around">
+                        <section class="w-100 h-100 d-flex flex-column justify-content-center">
                             <span class="Nom_neg_indx d-flex align-items-center"><%=nombreg[1]%></span>
                             <section class="d-flex flex-column desc justify-content-between">
                                 <span class="Des_neg_indx"><%=dd[1]%></span>
@@ -106,7 +106,7 @@
                 <div class="carousel-item h-100">
                     <img src="<%=img2[2]%>" class="d-block w-100 h-100 imgn" alt="...">
                     <div class="neg d-flex">
-                        <section class="w-100 h-100 d-flex flex-column justify-content-around">
+                        <section class="w-100 h-100 d-flex flex-column justify-content-center">
                             <span class="Nom_neg_indx d-flex align-items-center"><%=nombreg[2]%></span>
                             <section class="d-flex flex-column desc justify-content-between">
                                 <span class="Des_neg_indx"><%=dd[2]%></span>
@@ -166,7 +166,7 @@
             <div class="slid_neg d-flex flex-column">
                 <span class="w-100">Los Mejores Negocios</span>
                 <span>Encuentra y apoya a los mejores negocios de nuestra comunidad en un solo lugar.
-                      Descubre joyas ocultas y favoritos de la comunidad, cuidadosamente seleccionados por su calidad, servicio excepcional o propuestas únicas. Disfruta de experiencias gastronómicas y servicios que sobresalen, avalados por la satisfacción de sus clientes.</span>
+                    Descubre joyas ocultas y favoritos de la comunidad, cuidadosamente seleccionados por su calidad, servicio excepcional o propuestas únicas. Disfruta de experiencias gastronómicas y servicios que sobresalen, avalados por la satisfacción de sus clientes.</span>
                 <button id="prev_lmn" class="btn prev"><i class="bi bi-caret-left"></i></button>
                 <button id="next_lmn" class="btn next"><i class="bi bi-caret-right"></i></button>
                 <div class="slider_i" id="slider_lmn">
@@ -201,7 +201,7 @@
                                 <span class="nn_sli_n" id="nn_sli_n"><%=nombre%></span>
                                 <span class="nv_sli_n" id="nv_sli_n"><%=nombreu%></span>
                                 <section class="d-flex w-100 justify-content-around cf_sli_n">
-                                   <span class="nv_sli_n" id="nv_sli_n"><%=desc%></span> 
+                                    <span class="nv_sli_n" id="nv_sli_n"><%=desc%></span> 
                                 </section>
                                 <section class="d-flex w-100 justify-content-around align-items-center dir_sli_n">
                                     <i class="bi bi-geo-alt-fill"></i>
@@ -253,13 +253,13 @@
                 %>
 
                 <section class="card_pro_most card_pro_most_active">
-                    <img src="<%=pi%>" class="card-img-top img_most" alt="...">
+                    <span class="card-title tt_pro_most" id="tt_pro_most"><%=np%></span>
+                    <img src="<%=pi%>" class="card-img-top img_most" alt="..." id="card-img-top">
                     <div class="card-body d-flex flex-column">
-                        <span class="card-title tt_pro_most" id="tt_pro_most"><%=np%></span>
                         <div class="d-flex w-100 justify-content-between align-items-lg-center pr_inf_n">
                             <span class="pre_sl d-flex">$<div class="pre_most_pro" id="pre_most_pro"><%=pre%></div>
                             </span>
-                           
+
                         </div>
                         <span class="card-text" id="desc_com_pro"><%=pd%></span>
                     </div>
@@ -274,7 +274,7 @@
         <!--NOVEDADES-->
         <div class="slid_pro d-flex flex-column">
             <span class="w-100 dtp_tt">Novedades</span>
-            
+
             <button id="prev_dtp" class="btn prev"><i class="bi bi-caret-left"></i></button>
             <button id="next_dtp" class="btn next"><i class="bi bi-caret-right"></i></button>
             <div class="slider_i" id="slider_dtp">
@@ -297,18 +297,18 @@
                         String dis = pr2.getString("neg_nombre");
                         String pd = pr2.getString("nov_descripcion");
                 %>
- <section class="card_pro_most card_pro_most_active">
+                <section class="card_pro_most card_pro_most_active">
                     <img src="<%=pi2%>" class="card-img-top img_most" alt="...">
                     <div class="card-body d-flex flex-column">
                         <span class="card-title tt_pro_most" id="tt_pro_most"><%=dis%></span>
-                         <span class="card-text" id="desc_com_pro"><%=np%></span>
+                        <span class="card-text" id="desc_com_pro"><%=np%></span>
                         <span class="card-text" id="desc_com_pro"><%=pd%></span>
-                        
+
                     </div>
-                   
-                        <input type="hidden" value="<%=pre%>" name="idn" />
-                         
-                    
+
+                    <input type="hidden" value="<%=pre%>" name="idn" />
+
+
                 </section>
                 <%
                     }
@@ -380,14 +380,12 @@
         <div class="producto_epecifico_contenedor">
             <section class="btns_pro_most_esp_res">
                 <button class="btn btns_pro_most bpmer_active" id="IDP">Información del producto</button>
-                <button class="btn btns_pro_most" id="Resn">Reseñas</button>
             </section>
             <div class="Prod_most_espe_cont justify-content-around">
                 <div class="Prod_most_espe_cont1 w-100 h-100 justify-content-around" id="Prod_most_espe_cont1">
-                    <img src="assets/neg1.jpg" alt="" class="h-100 img_pro_mosr_espe">
+                    <img src="assets/neg1.jpg" alt="" class="h-100 img_pro_mosr_espe" id="img_pro_mosr_espe">
                     <section class="d-flex flex-column h-100 secc_pro_most_espe">
                         <span id="npv_pro_esp">Nombre del Producto Vendido</span>
-                        <span id="cal_pro_esp">00.00</span>
                         <span id="pre_pro_esp">$000000.00</span>
                         <span id="des_pro_esp">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat eum
                             distinctio ipsum nostrum
@@ -396,106 +394,6 @@
                             facere vitae.</span>
                         <span id="dis_pro_esp">Disponibilidad</span>
                     </section>
-                </div>
-                <div class="Prod_most_espe_cont2 flex-column w-100 h-100" id="Prod_most_espe_cont2">
-                    <span class="Tittle_coment_res">Calificar este Producto</span>
-                    <form class="d-flex w-100 w-75 comment_realizar_div" method="post">
-                        <section class="comment_realizar">
-                            <textarea name="coment_prod_usu" id="coment_prod_usu" class="coment_prod_usu"
-                                      placeholder="Escribir un comentario"></textarea>
-                            <hr>
-                            <button type="submit">Comentar</button>
-                        </section>
-                        <section class="heart_pro_res d-flex flex-column">
-                            <i class="bi bi-heart h_sc" id="h_sc" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                               data-bs-title="Me Gusta"></i>
-                            <i class="bi bi-heart-fill h_cc" id="h_cc" data-bs-toggle="tooltip"
-                               data-bs-placement="bottom" data-bs-title="Ya no me Gusta"></i>
-                        </section>
-                    </form>
-                    <span class="Tittle_coment_res">Reseñas de otros Usuarios</span>
-                    <div class="res_otr_usu d-flex">
-                        <button id="prev_cr" class="btn prev_cr"><i class="bi bi-caret-left"></i></button>
-                        <button id="next_cr" class="btn next_cr"><i class="bi bi-caret-right"></i></button>
-                        <div class="w-100 h-100 d-flex" id="res_otr_usu">
-                            <section class="d-flex flex-column resena_usu_pro">
-                                <section class="d-flex justify-content-between">
-                                    <img src="assets/Logo_Icon.png" alt="" class="img_usu_res_pro">
-                                    <section class="w-75">
-                                        <span>Nombre de Usuario</span>
-                                        <section><i class="bi bi-heart-fill"></i><span> Le gusta</span></section>
-                                        <span>Comentarios Hechos: 000000</span>
-                                    </section>
-                                </section>
-                                <section class="d-flex flex-column">
-                                    <span>00-Mont-0000</span>
-                                    <span>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ea velit, illum
-                                        nisi
-                                        pariatur consequatur eum cupiditate dolore magni deleniti repellendus laboriosam
-                                        esse neque, nobis nesciunt explicabo et culpa maxime.
-                                    </span>
-                                </section>
-                            </section>
-                            <section class="d-flex flex-column resena_usu_pro">
-                                <section class="d-flex justify-content-between">
-                                    <img src="assets/Logo_Icon.png" alt="" class="img_usu_res_pro">
-                                    <section class="w-75">
-                                        <span>Nombre de Usuario</span>
-                                        <section><i class="bi bi-heart-fill"></i><span> Le gusta</span></section>
-                                        <span>Comentarios Hechos: 000000</span>
-                                    </section>
-                                </section>
-                                <section class="d-flex flex-column">
-                                    <span>00-Mont-0000</span>
-                                    <span>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ea velit, illum
-                                        nisi
-                                        pariatur consequatur eum cupiditate dolore magni deleniti repellendus laboriosam
-                                        esse neque, nobis nesciunt explicabo et culpa maxime.
-                                    </span>
-                                </section>
-                            </section>
-                            <section class="d-flex flex-column resena_usu_pro">
-                                <section class="d-flex justify-content-between">
-                                    <img src="assets/Logo_Icon.png" alt="" class="img_usu_res_pro">
-                                    <section class="w-75">
-                                        <span>Nombre de Usuario</span>
-                                        <section><i class="bi bi-heart-fill"></i><span> Le gusta</span></section>
-                                        <span>Comentarios Hechos: 000000</span>
-                                    </section>
-                                </section>
-                                <section class="d-flex flex-column">
-                                    <span>00-Mont-0000</span>
-                                    <span>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ea velit, illum
-                                        nisi
-                                        pariatur consequatur eum cupiditate dolore magni deleniti repellendus laboriosam
-                                        esse neque, nobis nesciunt explicabo et culpa maxime.
-                                    </span>
-                                </section>
-                            </section>
-                            <section class="d-flex flex-column resena_usu_pro">
-                                <section class="d-flex justify-content-between">
-                                    <img src="assets/Logo_Icon.png" alt="" class="img_usu_res_pro">
-                                    <section class="w-75">
-                                        <span>Nombre de Usuario</span>
-                                        <section><i class="bi bi-heart-fill"></i><span> Le gusta</span></section>
-                                        <span>Comentarios Hechos: 000000</span>
-                                    </section>
-                                </section>
-                                <section class="d-flex flex-column">
-                                    <span>00-Mont-0000</span>
-                                    <span>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ea velit, illum
-                                        nisi
-                                        pariatur consequatur eum cupiditate dolore magni deleniti repellendus laboriosam
-                                        esse neque, nobis nesciunt explicabo et culpa maxime.
-                                    </span>
-                                </section>
-                            </section>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -510,12 +408,13 @@
             selector: '[data-bs-toggle="tooltip"]',
         });
     </script>
-                                                    <%
-            }else{
-    System.out.println("Error: Sesión no existe");
-    response.sendRedirect("index.jsp");
-}
-            %>
+    <%
+        } else
+        {
+            System.out.println("Error: Sesión no existe");
+            response.sendRedirect("index.jsp");
+        }
+    %>
     <script src="js/Nav.js"></script>
     <script src="js/index.js"></script>
 </body>

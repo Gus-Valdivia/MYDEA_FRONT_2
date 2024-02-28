@@ -36,7 +36,7 @@
                         <li><label for="Con_is">Contraseña</label><input value="${valorPass}" type="password" id="Con_is" name="Con_is" class="form-control" placeholder=" Ingresar">
                             <span class="error">${error_contraseña_Vacio}</span>
                         </li></ul>
-                    <span>¿Aún no tienes una cuenta?<a href="Registro.jsp" class="txt_os">Registrarse</a> </span>
+                    <span>¿Aún no tienes una cuenta? <a href="Registro.jsp" class="txt_os">Registrarse</a> </span>
                 </div>
                 <button class="btn btns_is" type="submit" id="Boton_is">
                     Iniciar Sesión

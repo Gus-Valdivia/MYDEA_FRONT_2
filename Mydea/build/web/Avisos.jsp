@@ -23,7 +23,7 @@
                         AVISO DE PRIVACIDAD
                     </button>
                 </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                         <strong>
                             RESPONSABLE </strong><br>
@@ -51,8 +51,9 @@
                         Usted tiene derecho de acceder, rectificar y cancelar sus datos personales, así como de oponerse al
                         tratamiento de los mismos o revocar el consentimiento que para tal fin nos haya otorgado, a través
                         de los procedimientos que hemos implementado. Para conocer dichos procedimientos, los requisitos y
-                        plazos, se puede poner en contacto con nuestro departamento de datos personales en <strong>[correo
-                            electrónico].</strong><br>
+                        plazos, se puede poner en contacto con nuestro departamento de datos personales en <strong>
+                            mydeaethev@gmail.com.
+                        </strong><br>
                         <br>
                         <strong>
                             CAMBIOS EN EL AVISO DE PRIVACIDAD<br></strong>
@@ -60,7 +61,7 @@
                         nuevos requerimientos legales o por necesidades propias sobre los servicios. Nos comprometemos a
                         mantener siempre actualizado este aviso de privacidad y siempre podrá consultar las actualizaciones
                         que existan en <code>[dirección].</code> <br>
-                        Ultima actualización: 26/09/2023.<br>
+                        Ultima actualización: 26/02/2023.<br>
 
                     </div>
                 </div>
