@@ -473,9 +473,9 @@
                 %>
 
                  <section class="card_pro_most card_pro_most_active">
+                        <span class="card-title tt_pro_most" id="tt_pro_most"><%=dis%></span>
                     <img src="<%=pi2%>" class="card-img-top img_most" alt="...">
                     <div class="card-body d-flex flex-column">
-                        <span class="card-title tt_pro_most" id="tt_pro_most"><%=dis%></span>
                          <span class="card-text" id="desc_com_pro"><%=np%></span>
                         <span class="card-text" id="desc_com_pro"><%=pd%></span>
                         

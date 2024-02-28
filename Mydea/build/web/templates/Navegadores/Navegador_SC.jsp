@@ -31,7 +31,7 @@
                 <button type="button" class="btn btn_rosa text-white" id="btn_registro">Registrarse</button>
             </div>
             <div class="col-xl-2 col-lg-2 boton">
-                <button class="navbar-toggler icon type="button" data-bs-toggle="offcanvas"
+                <button class="navbar-toggler icon" type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <i class="bi bi-list"></i>
                 </button>
