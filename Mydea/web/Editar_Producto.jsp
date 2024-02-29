@@ -10,7 +10,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <jsp:include page="templates/Referencias/Todas_Ref.jsp"/>
-        <title>JSP Page</title>
+        <title>Editar Productos</title>
     </head>
     <body>
         <jsp:include page="templates/Navegadores/Navegador_CV.jsp"/>

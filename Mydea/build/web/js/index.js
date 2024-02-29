@@ -75,22 +75,3 @@ divEspecifico.addEventListener("click", (e) => {
         divEspecifico.style.display = "none";
     }
 });
-
-//Btn Like
-sin_like.addEventListener("click", () => {
-    sin_like.style.display = "none";
-    con_like.style.display = "flex";
-});
-
-con_like.addEventListener("click", () => {
-    sin_like.style.display = "flex";
-    con_like.style.display = "none";
-});
-
-document.getElementById('prev_cr').addEventListener('click', function () {
-    slider_cup.scrollBy({ left: -600, behavior: 'smooth' });
-});
-
-document.getElementById('next_cr').addEventListener('click', function () {
-    slider_cup.scrollBy({ left: 600, behavior: 'smooth' });
-});

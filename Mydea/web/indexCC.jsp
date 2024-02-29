@@ -23,7 +23,6 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <jsp:include page="templates/Referencias/Todas_Ref.jsp"/>
-
         <title>Difunde tú negocio con Mydea</title>
     </head>
     <body class="index">
