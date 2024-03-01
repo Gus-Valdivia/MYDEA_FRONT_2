@@ -35,7 +35,8 @@
                             <span class="error">${error_telefono_Vacio}</span>
                             <span class="error">${error_telefono_Invalido}</span>
                         </li>
-                        <li><label for="Con_reg">Contraseña</label><input value="${valorPassword}" type="password" class="form-control" placeholder=" Ingresar" id="Con_reg" name="Con_reg" autocomplete="new-password">
+                        <li><label for="Con_reg">Contraseña</label>
+                            <section class="contr_sect"><input value="${valorPassword}" type="password" class="form-control contr_inp" placeholder=" Ingresar" id="Con_reg" name="Con_reg" autocomplete="new-password"><i class="bi bi-eye eye_r" id="eyesc1"></i><i class="bi bi-eye-slash eye_r" id="eyenc1"></i></section>
                             <span class="error">${error_contraseña_Vacio}</span>
                             <span class="error">${error_contraseña_Invalido}</span>
                         </li>
@@ -58,7 +59,7 @@
                     </ul>        
                     <span class="error">${error_TyC_Vacio}</span>
                     <span class="error">${error_AP_Vacio}</span>
-                    
+
                     <span>¿Ya tienes una cuenta? <a href="Iniciar_Sesion.jsp" class="txt_or">Iniciar Sesión</a> </span>
 
                 </div>
@@ -68,8 +69,7 @@
             </form>
         </div>
         <%
-            if (request.getAttribute("mensaje") != null)
-            {
+            if (request.getAttribute("mensaje") != null) {
         %>          
         <script>
             window.onload = function () {

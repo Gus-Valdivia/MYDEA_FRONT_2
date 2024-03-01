@@ -11,7 +11,9 @@ let ConCon_reg = document.getElementById("ConCon_reg");
 let Boton_reg = document.getElementById("btns_reg");
 let Check1 = document.getElementById("TyC_reg");
 let Check2 = document.getElementById("AP_reg");
-
+let VerC1 = document.getElementById("eyesc1");
+let NVerC1 = document.getElementById("eyenc1");
+let C1 = document.getElementById("Con_reg");
 document.addEventListener('keyup', ()=>{
     if(Nombre_com_reg.value != "" && Nom_usu_reg.value !="" && Email_reg.value !="" && Num_reg.value !="" && Con_reg.value !="" && ConCon_reg.value !=""){
         Boton_reg.classList.remove("btns_reg");
@@ -20,4 +22,16 @@ document.addEventListener('keyup', ()=>{
         Boton_reg.classList.add("btns_reg");
         Boton_reg.classList.remove("btns_reg_active");
     }
+});
+
+VerC1.addEventListener("click", ()=>{
+    VerC1.style.display = "none";
+    NVerC1.style.display = "block";
+    C1.type = "text";
+});
+
+NVerC1.addEventListener("click", ()=>{
+    VerC1.style.display = "block";
+    NVerC1.style.display = "none";
+    C1.type = "password";
 });
