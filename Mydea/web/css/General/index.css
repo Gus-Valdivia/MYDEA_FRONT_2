@@ -250,7 +250,8 @@ nav {
     margin: 0px;
 }
 .cf_sli_n {
-    font-size: 1.4rem;
+  font-size: 1.4rem;
+  /*height: 2rem;*/
 }
 .dir_sli_n i {
     font-size: 1.8rem;
@@ -729,15 +730,15 @@ nav {
     width: 100%;
 }
 .img_card_cm{
-    position: absolute;
-    left: 50%;
-    top: 0;
-    transform: translate(-50%);
-    -webkit-transform: translate(-50%);
-    -moz-transform: translate(-50%);
-    -ms-transform: translate(-50%);
-    -o-transform: translate(-50%);
-    height: 75%;
+  position: relative;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%);
+  -webkit-transform: translate(-50%);
+  -moz-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  -o-transform: translate(-50%);
+  height: 75%;
 }
 #img_card_eib{
     width: 100%;
@@ -775,14 +776,98 @@ nav {
 .NegocioSC{
     position: relative;
 }
-.slider_ip{
-    margin-left: 3%;
-    margin-top: 2%;
+.card_info_in{
+    flex-direction: column;
+    height: 100%;
+    width: 25%;
 }
-#desc_com_pro{
-    height: 70px;
+.information_index{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+}
+.information_index_mobile{
+    display: none;
+}
+
+@media screen and (max-width:1024px){
+    #carouselExampleInterval{
+        padding-top: 14vh;
+    }
+    .neg{
+        flex-direction: column;
+    }
+    .section_imagen_neg{
+       order: 1; 
+    }
+    .section_neg{
+        order: 2;
+    }
+    .img_lg_crrs{
+        height: 25vh;
+        width: 25vh;
+    }
+    .carousel-inner{
+        height: 50vh;
+    }
+    .btn_exp{
+        width: 50%;
+    }
+    .information_index{
+        display: none;
+    }
+    .information_index_mobile{
+        display: flex;
+        flex-direction: column;
+    }
+    .card_info_in_mobile{
+        margin: 5px;
+        border-radius: 10px
+    }
+    .texto{
+        display: none;
+    }
+    .card_i{
+        width: 250px;
+        height: 250px;
+    }
+    .prev{
+        left: 10px;
+    }
+    .next{
+        right: 0;
+    }
+    .hover_infn{
+        width: 250px;
+        height: 250px;
+    }
+    .dts_sli_n{
+        width: 250px;
+        height: 250px;
+    }
+    #nn_sli_n{
+        font-size: 1.5rem;
+    }
+    #nv_sli_n{
+        font-size: 1rem;
+    }
+    .cf_sli_n{
+        font-size: 1rem;
+    }
+    .direccion{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-height:741px){
+    .Nom_neg_indx{
+        font-size: 5rem;
+    }
+    .Des_neg_indx{
+        font-size: 1rem;
+        margin-bottom: 5px;
+    }
+}
+@media screen and (min-height:1366px){
+    #carouselExampleInterval{
+        padding-top: 10%;
+    }
 }
