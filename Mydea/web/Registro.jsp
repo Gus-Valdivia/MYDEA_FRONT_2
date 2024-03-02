@@ -10,8 +10,8 @@
     <body>
         <jsp:include page="templates/Navegadores/Navegador_SC.jsp"/>
         <div class="content_registro d-flex flex-column justify-content-between" data-aos="fade-up">
-            <section class="color1_reg deslizari"></section>
-            <section class="color2_reg deslizari"></section>
+            <section class="color1_reg deslizari" id="barr1"></section>
+            <section class="color2_reg deslizari" id="barr2"></section>
             <form class="w-100 container_reg align-items-center justify-content-center flex-column subir" method="post" action="Registro">
                 <div class="reg_form_container justify-content-between align-items-center">
                     <section class="Txt_reg d-flex flex-column justify-content-center align-items-center">
@@ -40,7 +40,10 @@
                             <span class="error">${error_contraseña_Vacio}</span>
                             <span class="error">${error_contraseña_Invalido}</span>
                         </li>
-                        <li><label for="ConCon_reg">Confirmar Contraseña</label><input value="${valorCpassword}" type="password" class="form-control" placeholder=" Confirmar" id="ConCon_reg" name="ConCon_reg">
+                        <li><label for="ConCon_reg">Confirmar Contraseña</label>
+                            <section class="contr_sect">
+                                <input value="${valorCpassword}" type="password" class="form-control" placeholder=" Confirmar" id="ConCon_reg" name="ConCon_reg"><i class="bi bi-eye eye_r" id="eyesc2"></i><i class="bi bi-eye-slash eye_r" id="eyenc2"></i>
+                            </section>
                             <span class="error">${error_confirmarContraseña_Vacio}</span>
                             <span class="error">${error_confirmarContraseña_Invalido}</span>
                         </li>   

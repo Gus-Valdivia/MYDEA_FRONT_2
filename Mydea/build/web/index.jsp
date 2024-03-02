@@ -242,8 +242,8 @@
 
         <!--DE TODO UN POCO-->
         <div class="slid_pro d-flex flex-column">
-            <span class="w-100 dtp_tt dtup">De Todo un Poco</span>
-            <span class="dtup texto">Aquí encontrarás una mezcla fascinante de contenido variado que enriquecerá tu experiencia. 
+            <span class="w-100 dtp_tt">De Todo un Poco</span>
+            <span class="dtup texto dtup_txt">Aquí encontrarás una mezcla fascinante de contenido variado que enriquecerá tu experiencia. 
                 Sumérgete en artículos, recomendaciones, actualizaciones y mucho más. Explora, aprende y descubre un mundo de posibilidades en este espacio lleno de sorpresas.
             </span>
             <button id="prev_dtp" class="btn prev"><i class="bi bi-caret-left"></i></button>
