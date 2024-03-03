@@ -57,8 +57,8 @@
                     </select>
                     <span class="error">${error_tipoCuenta_Invalido}</span>
                     <ul class="d-flex w-100 justify-content-around avisos">
-                        <li><input type="checkbox" id="TyC_reg" name="TyC_reg" ${not empty requestScope.valorTyC ? 'checked' : ''}><a href="Avisos.jsp"><span>Aceptar Términos y Condiciones</span></a></li>
-                        <li><input type="checkbox" id="AP_reg" name="AP_reg"><a href="Avisos.jsp" ${not empty requestScope.valorAP ? 'checked' : ''}><span>Aceptar Aviso de Privacidad</span></a></li>
+                        <li><input type="checkbox" id="TyC_reg" name="TyC_reg" ${not empty requestScope.valorTyC ? 'checked' : ''}><a href="Terminos_Condiciones.jsp" target="_blank"><span>Aceptar Términos y Condiciones</span></a></li>
+                        <li><input type="checkbox" id="AP_reg" name="AP_reg"><a href="Aviso_Privacidad.jsp" target="_blank" ${not empty requestScope.valorAP ? 'checked' : ''}><span>Aceptar Aviso de Privacidad</span></a></li>
                     </ul>        
                     <span class="error">${error_TyC_Vacio}</span>
                     <span class="error">${error_AP_Vacio}</span>

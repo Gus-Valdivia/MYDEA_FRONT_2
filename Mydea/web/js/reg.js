@@ -57,8 +57,8 @@ NVerC2.addEventListener("click", ()=>{
 
 Tvendedor.addEventListener("change", ()=>{
     if(Tvendedor.value === "2"){
-        barr1.style.background = "rgba(244, 55, 112, 1)";
-        barr2.style.background = "rgba(244, 55, 112, 1)";
+        barr1.style.background = "#971a40";
+        barr2.style.background = "#971a40";
     }
     if(Tvendedor.value === "1"){
         barr1.style.background = "#D95538";
