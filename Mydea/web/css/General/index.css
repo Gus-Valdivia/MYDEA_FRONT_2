@@ -860,6 +860,41 @@ nav {
     .direccion{
         font-size: 1rem;
     }
+    .producto_epecifico_contenedor {
+        width: 90%;
+    }
+    .Prod_most_espe_cont1{
+        flex-direction: column;
+        align-items: center;
+    }
+    .img_pro_mosr_espe{
+        width: 95%;
+    }
+    .secc_pro_most_espe{
+        width: 100%;
+    }
+    .producto_epecifico_contenedor{
+        height: 75%;
+    }
+    .text_inst_pro_espe{
+        margin: 1rem 5% 5% 5%;
+        align-items: center;
+    }
+    .contacts-section1{
+        justify-content: space-between;
+    }
+    .line-footer{
+        width: 22%;
+    }
+    .contacts-footer{
+        width: 33%;
+    }
+    .more-footer{
+        width: 110%;
+    }
+    .more-footer a{
+        font-size: 0.6rem;
+    }
 }
 
 @media screen and (max-height:741px){

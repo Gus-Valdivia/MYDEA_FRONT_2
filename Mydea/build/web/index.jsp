@@ -399,7 +399,7 @@
                 <button class="btn btns_pro_most bpmer_active" id="IDP">Información del producto</button>
             </section>
             <div class="Prod_most_espe_cont justify-content-around">
-                <div class="Prod_most_espe_cont1 w-100 h-100 justify-content-around" id="Prod_most_espe_cont1">
+                <div class="Prod_most_espe_cont1 w-100 h-100" id="Prod_most_espe_cont1">
                     <img src="assets/neg1.jpg" alt="" class="h-100 img_pro_mosr_espe" id="img_pro_mosr_espe">
                     <section class="d-flex flex-column h-100 secc_pro_most_espe">
                         <span id="npv_pro_esp">Nombre del Producto Vendido</span>
